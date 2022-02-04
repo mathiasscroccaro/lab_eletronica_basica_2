@@ -1,0 +1,125 @@
+\documentclass{article}[12pt]
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage[portuguese]{babel}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{amsmath}
+
+%%% --- HIPERLINKS --- %%%
+
+\usepackage[colorlinks=true,plainpages=true,citecolor=black,linkcolor=black, urlcolor=blue]{hyperref}
+
+\usepackage{indentfirst}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage[a4paper,
+ top=3cm, 
+ bottom=2cm, 
+ left=3cm, 
+ right=2cm]{geometry} 
+ 
+\usepackage{titlesec}
+\usepackage{helvet}
+
+%%% --- CABEÇALHO E RODAPÉ --- %%%
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyhead[L]{\footnotesize Laboratório de Eletrônica Básica II - EE641}
+\fancyhead[R]{\footnotesize Plano Didático}   
+\fancyfoot[R]{\footnotesize 2020} 
+\fancyfoot[C]{} 
+\fancyfoot[L]{\footnotesize Faculdade de Engenharia Elétrica e Computação - Unicamp} 
+\renewcommand{\footrulewidth}{0.7pt}
+\renewcommand{\headrulewidth}{0.7pt}
+ 
+
+%\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\baselinestretch}{1.5} 
+\titlespacing{\section}{0pt}{36pt}{24pt}
+\setlength{\parindent}{4em}
+
+\def \proporcaoFigura {0.8}
+
+\begin{document}
+
+
+\newpage
+
+\normalsize
+
+\section*{Plano Didático\\EE641 - Laboratório de Eletrônica Básica II}
+
+\subsection*{Informações:}
+
+\textbf{Professores:} Dr. Eduardo Tavares Costa e Dr. Leandro Tiago Manera
+
+\textbf{PED:} Mathias Scroccaro Costa \hfill mathias.scroccaro@gmail.com
+
+\subsection*{Conteúdo programático:}
+
+Os alunos serão instruidos à montagem em placa perfurada padrão de um circuito didático para simulação, amplificação e processamento de sinais de ECG (Eletrocardiograma). Serão empregados circuitos integrados reguladores lineares de tensão, amplificadores operacionais, redes de realimentação e divisores resistivos. A plataforma Arduino será utilizada como interface de controle, a qual deverá ser programada. Desta maneira, os seguintes conteúdos específicos serão abordados:
+
+\begin{itemize}
+\item Realimentação e reguladores lineares de tensão;
+\item Topologias \textit{buffer}, inversor, somador e subtrator; 
+\item Amplificadores de instrumentação;
+\item Filtros ativos de primeira e segunda ordem (topologia Sallen-Key);
+\item Linguagem de programação C ou C++;
+\end{itemize}
+
+\subsection*{Programação das atividades:}
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{|c|c|l|}
+\hline
+\textbf{Encontro} & \textbf{Data} & \textbf{Conteúdo} \\ \hline
+\#1 & 20/01 (Segunda-feira) & \begin{tabular}[c]{@{}l@{}}Apresentação\\Realimentação e reguladores de tensão\end{tabular} \\ \hline
+\#2 & 21/01 (Terça-feira) & DAC1 - Somador 8 \textit{bits} e filtro 1ª ordem \\ \hline
+\#3 & 23/01 (Quinta-feira) & DAC2 - Adição de ruído e correção de \textit{offset} \\ \hline
+\#4 & 24/01 (Sexta-feira) & Amplificador de instrumentação pt. 1 \\ \hline
+\#5 & 27/01 (Segunda-feira) & Amplificador de instrumentação pt. 2\\ \hline
+\#6 & 28/01 (Terça-feira) & Filtro 2ª ordem Sallen-key \\ \hline
+\#7 & 30/01 (Quinta-feira) & Apresentação do projeto final \\ \hline
+\end{tabular}
+\end{table}
+
+\pagebreak
+
+\subsection*{Orientações para uso dos laboratórios:}
+
+\begin{itemize}
+\item Proibido comer ou ingerir líquidos;
+\item Proibido uso de calçados abertos;
+\item Manter ambiente organizado;
+\item Após utilizar cabos e instrumentos, reorganizá-los no devido local de origem.
+\end{itemize}
+
+\subsection*{Avaliação:}
+
+A avaliação será composta pela soma ponderada dos relatórios de experimento (RE) e apresentação do projeto final (PF), de maneira que
+\begin{equation*}
+\textrm{Nota Final} ~=~ 0,4 * \textrm{RE} ~+~ 0,6 * \textrm{PF}.
+\end{equation*}
+
+\nocite{sedra2007microeletronica}
+
+% \begin{figure}[hbt]
+% \centering
+%   \includegraphics[width=10cm]{}
+%   \caption{}
+%   \label{}
+% \end{figure}
+
+\bibliography{bibli}
+\bibliographystyle{ieeetr}
+
+
+
+
+
+\end{document}
